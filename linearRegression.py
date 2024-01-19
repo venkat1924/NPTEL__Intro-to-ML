@@ -20,7 +20,7 @@ def get_xy_values():
     y = float(input("Enter the value for y: "))
     return x, y
 
-def main():
+if __name__ == "__main__":
     # Input matrix X of order NxP
     N = int(input("Enter the number of rows (N) for matrix X: "))
     P = int(input("Enter the number of columns (P) for matrix X: "))
@@ -44,5 +44,3 @@ def main():
     expression_result = result_matrix[0][0] + x * result_matrix[1][0] + y * result_matrix[2][0]
     print(f"\nResult[0] + x * Result[1] + y * Result[2]: {expression_result}")
 
-if __name__ == "__main__":
-    main()
